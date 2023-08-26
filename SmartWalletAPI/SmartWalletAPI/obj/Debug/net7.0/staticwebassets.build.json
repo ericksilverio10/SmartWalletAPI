@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VyiB6NvFnqyTO5gSa5tKmK15r6apWXhxjlPjv0f7vFg=",
+  "Source": "SmartWalletAPI",
+  "BasePath": "_content/SmartWalletAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
