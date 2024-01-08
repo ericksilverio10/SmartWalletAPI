@@ -25,6 +25,9 @@ public class User implements Serializable, UserDetails {
     private UUID id;
     private String login;
     private String password;
+    private String fullname;
+    private String email;
+    private String phonenumber;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

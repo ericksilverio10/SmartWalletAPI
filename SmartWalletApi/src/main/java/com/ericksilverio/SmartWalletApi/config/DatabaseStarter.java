@@ -61,7 +61,7 @@ public class DatabaseStarter implements CommandLineRunner {
     }
 
     private User criarUsuario() {
-        User user = new User(UUID.randomUUID(),"erickblass", "$2a$12$IPhY3N9UB5rxdnBRfTBtkOa1V2cRsDxjqqMSHAHz5QQTCIDIrPYhq");
+        User user = new User(UUID.randomUUID(),"erickblass", "$2a$12$IPhY3N9UB5rxdnBRfTBtkOa1V2cRsDxjqqMSHAHz5QQTCIDIrPYhq", "Erick Silvério Blass", "erick1junior@hotmail.com", "11941822723");
 
         return user;
     }
