@@ -1,6 +1,6 @@
 package com.ericksilverio.SmartWalletApi.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 
 import java.util.UUID;
@@ -14,7 +14,7 @@ import java.util.UUID;
 @EqualsAndHashCode(of = "id")
 public class Wallet {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(generator = "uuid")
     private UUID id ;
     private String name;
     private Double balance;

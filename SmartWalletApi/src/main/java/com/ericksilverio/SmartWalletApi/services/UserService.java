@@ -47,4 +47,23 @@ public class UserService {
 
         return ResponseEntity.ok(savedUser);
     }
+
+    public ResponseEntity findById(String userId) {
+
+        var user = userRepository.findById(UUID.fromString(userId));
+
+        if (!user.isPresent()) {
+            return ResponseEntity.badRequest().body("usuário não encontrado!");
+        }
+
+        return ResponseEntity.ok(user);
+    }
+
+    public ResponseEntity findAll() {
+
+        var users = userRepository.findAll();
+
+
+        return ResponseEntity.ok(users);
+    }
 }

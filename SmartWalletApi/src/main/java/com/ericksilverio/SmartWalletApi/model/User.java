@@ -1,11 +1,11 @@
 package com.ericksilverio.SmartWalletApi.model;
 
-import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
@@ -18,10 +18,9 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of="id")
-
 public class User implements Serializable, UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(generator = "uuid")
     private UUID id;
     private String login;
     private String password;
