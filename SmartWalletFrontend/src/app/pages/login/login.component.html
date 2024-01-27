@@ -1,0 +1,25 @@
+<div class="container-pai">
+    <img src="../../../assets/illustration-{{randomInt}}.jpg" alt="">
+    <div class="container card flex justify-content-center column">
+        <h2 style="text-align: center;">Bem-vindo(a)</h2>
+        <p>Faça seu login para continuar</p>
+        <form style="text-align: center;">
+            <span class="p-float-label p-input-icon-left">
+                <i class="pi pi-user"></i>
+                <input class="ng-invalid" ng-dirty pInputText id="username" />
+                <label for="username">Login</label>
+            </span>
+            <span class="p-float-label p-input-icon-left">
+                <i class="pi pi-lock"></i>
+                <input pInputText id="password" type="password" />
+                <label for="password">Senha</label>
+            </span>
+        </form>
+        <div style="text-align: center;" class="button">
+            <p-button (click)="goToHome()" label="Entrar"></p-button>
+            <br><br>
+            <p-button (click)="signUp()" label="Não tem conta? Cadastre-se" [text]="true"></p-button>
+        </div>
+    </div>
+</div>
+
