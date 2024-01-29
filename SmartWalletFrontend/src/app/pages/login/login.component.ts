@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit{
   }
 
   signUp() {
-    this.router.navigate(['sign-up'])
+    this.router.navigate(['signup'])
   }
 
   ngOnInit(): void {

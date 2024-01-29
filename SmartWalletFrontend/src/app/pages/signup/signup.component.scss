@@ -1,26 +1,3 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    justify-content: center !important;
-    max-width: 25rem;
-    padding: 2rem;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-left: 2rem;
-}
-span {
-    margin: 1.4rem;
-}
-a {
-    text-decoration: underline;
-}
-.container-pai {
-    margin: 7rem 5rem 5rem 5rem;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 500px;
-    justify-content: center;
+.steps {
+    margin: 3rem;
 }
