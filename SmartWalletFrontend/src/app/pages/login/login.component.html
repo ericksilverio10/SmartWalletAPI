@@ -1,5 +1,8 @@
 <div class="container-pai">
-    <img src="../../../assets/illustration-{{randomInt}}.jpg" alt="">
+    <div style="width: 500px;" *ngIf="!imagemCarregada">
+        <p-progressSpinner></p-progressSpinner>
+    </div>
+    <img (load)="onImageLoad()" src="../../../assets/illustration-{{randomInt}}.jpg" alt="">
     <div class="container card flex justify-content-center column">
         <h2 style="text-align: center;">Bem-vindo(a)</h2>
         <p>Faça seu login para continuar</p>

@@ -1,1 +1,34 @@
-<p>personal-info works!</p>
+<div class="container-pai">
+    <div style="width: 500px;" *ngIf="!imagemCarregada">
+        <p-progressSpinner fill="var(--surface-ground)"></p-progressSpinner>
+    </div>
+
+    <img (load)="onImageLoad()" src="../../../../assets/personal-info.jpg" alt="">
+    <div class="container card flex justify-content-center column">
+        <h2 style="text-align: center;">Informações pessoais</h2>
+        
+        <form style="text-align: center;">
+            <span class="p-float-label">
+                <input class="ng-invalid" ng-dirty pInputText id="fullname" />
+                <label for="fullname">Nome completo</label>
+            </span>
+            <span class="p-float-label">
+                <input class="ng-invalid" ng-dirty pInputText id="login" />
+                <label for="login">Usuário</label>
+            </span>
+            <span class="p-float-label">
+                <input class="ng-invalid" ng-dirty pInputText id="email" />
+                <label for="email">E-mail</label>
+            </span>
+            <span class="p-float-label">
+                <p-inputMask mask="(99) 99999-9999" id="ssn_input"></p-inputMask>
+                <label for="phone">Telefone</label>
+            </span>
+        </form>
+        <div style="text-align: center; display: flex; justify-content: space-evenly;" class="button">
+            <p-button (click)="routerLink('login')" icon="pi pi-arrow-left" iconPos="left" label="Voltar"></p-button>
+            <p-button (click)="routerLink('signup/create-password')" icon="pi pi-arrow-right" iconPos="right" label="Próximo"></p-button>
+        </div>
+    </div>
+</div>
+
