@@ -17,7 +17,7 @@
 
         <p-button label="Não recebi meu código." [text]="true"></p-button>
         <div style="text-align: center; display: flex; justify-content: space-evenly; margin-top: 1rem;" class="button">
-            <p-button (click)="routerLink('signup/create-password')" icon="pi pi-arrow-left" iconPos="left" label="Voltar"></p-button>
+            <p-button (click)="routerLink('signup/create-password')" icon="pi pi-arrow-left" [outlined]="true" iconPos="left" label="Voltar"></p-button>
             <p-button severity="success" (click)="routerLink('signup/confirmation')" icon="pi pi-check-circle" iconPos="right" label="Criar conta"></p-button>
         </div>
     </div>

@@ -21,7 +21,9 @@ export class ConfirmationComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    if(sessionStorage.getItem("userData") == null || sessionStorage.getItem("userData") == '') {
+      this.router.navigate(['signup/personal-info'])
+    }
     this.imagemCarregada = false;
 
   }

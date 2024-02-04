@@ -15,6 +15,8 @@ import { DividerModule } from 'primeng/divider';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { ToastModule } from 'primeng/toast';
 import { SkeletonModule } from 'primeng/skeleton';
+import { FormsModule } from '@angular/forms';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { SkeletonModule } from 'primeng/skeleton';
     DividerModule,
     ProgressSpinnerModule,
     ToastModule,
-    SkeletonModule
+    SkeletonModule,
+    FormsModule,
+    ConfirmDialogModule
   ]
 })
 export class SignupModule { }
